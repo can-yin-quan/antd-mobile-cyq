@@ -1,5 +1,5 @@
-const brandPrimary = '#108ee9';
-const brandPrimaryTap = '#1284d6';
+const brandPrimary = '#fcd000'; // cyq 
+const brandPrimaryTap = '#fcd033'; // cyq
 
 export default {
   // 支付宝钱包默认主题
@@ -9,12 +9,12 @@ export default {
   // ---
   // 文字色
   color_text_base: '#000',                  // 基本
-  color_text_base_inverse: '#fff',          // 基本 _ 反色
+  color_text_base_inverse: '#000',          // 基本 _ 反色 // cyq
   color_text_secondary: '#a4a9b0',          // 辅助色
-  color_text_placeholder: '#bbb',           // 文本框提示
+  color_text_placeholder: '#a6a6a6',           // 文本框提示 // cyq
   color_text_disabled: '#bbb',              // 失效
   color_text_caption: '#888',               // 辅助描述
-  color_text_paragraph: '#333',             // 段落
+  color_text_paragraph: '#808080',             // 段落 // cyq
   color_link: brandPrimary,                 // 链接
 
   // 阴影色
@@ -22,7 +22,7 @@ export default {
 
   // 背景色
   fill_base: '#fff',                           // 组件默认背景
-  fill_body: '#f5f5f9',                        // 页面背景
+  fill_body: '#f3f3f3',                        // 页面背景 // cyq
   fill_tap: '#ddd',                            // 组件默认背景 _ 按下
   fill_disabled: '#ddd',                       // 通用失效背景
   fill_mask: 'rgba(0, 0, 0, .4)',              // 遮罩背景
@@ -35,11 +35,11 @@ export default {
   // 全局/品牌色
   brand_primary: brandPrimary,
   brand_primary_tap: brandPrimaryTap,
-  brand_success: '#6abf47',
-  brand_warning: '#f4333c',
+  brand_success: '#97d470',
+  brand_warning: '#fefcec',
   brand_error: '#f4333c',
-  brand_hot: '#f96268',        // 用于推荐/促销/折扣
-  brand_important: '#ff5b05',  // 用于小红点
+  brand_hot: '#dd4145',        // 用于推荐/促销/折扣 // cyq
+  brand_important: '#fb7c61',  // 用于小红点 // cyq
 
   // 边框色
   border_color_base: '#ddd',

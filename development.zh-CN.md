@@ -238,7 +238,7 @@ $ npm run test:web -- components/button/__tests__/index.test.web.js -t 'pressIn'
 ```bash
 bash deploy.sh
 ```
-> 删除package.josn prepublish， 再执行npm publish   
+> 删除package.json prepublish， 再执行npm publish   
 > 执行npm run pub 发布，但是会有问题。。。待研究
 
 
