@@ -42,7 +42,7 @@ export default {
   brand_important: '#fb7c61',  // 用于小红点 // cyq
 
   // 边框色
-  border_color_base: '#ddd',
+  border_color_base: '#f3f3f3',
 
   // 字体尺寸
   // ---

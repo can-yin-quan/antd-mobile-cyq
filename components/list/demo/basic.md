@@ -26,7 +26,7 @@ class ListExample extends React.Component {
           标题文字 <Brief>副标题</Brief>
         </Item>
         <Item
-          arrow="horizontal"
+          arrow="horizontal_yellow"
           multipleLine
           onClick={() => {}}
           platform="android"

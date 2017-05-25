@@ -116,6 +116,9 @@ export default class Item extends React.Component<ListItemProps, any> {
       horizontal: <Image source={require('../style/images/arrow.png')} style={styles.Arrow} />,
       down: <Image source={require('../style/images/arrow-down.png')} style={styles.ArrowV} />,
       up: <Image source={require('../style/images/arrow-up.png')} style={styles.ArrowV} />,
+      horizontalYellow: <Image source={require('../style/images/arrow-y.png')} style={styles.Arrow} />,
+      downYellow: <Image source={require('../style/images/arrow-down-y.png')} style={styles.ArrowV} />,
+      upYellow: <Image source={require('../style/images/arrow-up-y.png')} style={styles.ArrowV} />,
     };
 
     const itemView = (

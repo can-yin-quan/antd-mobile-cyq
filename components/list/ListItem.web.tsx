@@ -107,9 +107,10 @@ class ListItem extends React.Component<ListItemProps, any> {
 
     const arrowCls = classNames({
       [`${prefixCls}-arrow`]: true,
-      [`${prefixCls}-arrow-horizontal`]: arrow === 'horizontal',
-      [`${prefixCls}-arrow-vertical`]: arrow === 'down' || arrow === 'up',
-      [`${prefixCls}-arrow-vertical-up`]: arrow === 'up',
+      [`${prefixCls}-arrow-horizontal`]: arrow && arrow.indexOf('horizontal') > -1,
+      [`${prefixCls}-arrow-vertical`]: (arrow && arrow.indexOf('down') > -1) || (arrow && arrow.indexOf('up') > -1) ,
+      [`${prefixCls}-arrow-vertical-up`]: arrow && arrow.indexOf('up') > -1,
+      [`${prefixCls}-arrow-yellow`]: arrow && arrow.indexOf('yellow') > -1,
     });
 
     const isAndroid = platform === 'android' || (platform === 'cross' && !!navigator.userAgent.match(/Android/i));
