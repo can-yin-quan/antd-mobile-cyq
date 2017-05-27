@@ -1,5 +1,5 @@
 const brandPrimary = '#fcd000'; // cyq 
-const brandPrimaryTap = '#fcd033'; // cyq
+const brandPrimaryTap = '#fcb000'; // cyq
 
 export default {
   // 支付宝钱包默认主题
@@ -9,7 +9,7 @@ export default {
   // ---
   // 文字色
   color_text_base: '#000',                  // 基本
-  color_text_base_inverse: '#000',          // 基本 _ 反色 // cyq
+  color_text_base_inverse: '#fff',          // 基本 _ 反色 // cyq
   color_text_secondary: '#a4a9b0',          // 辅助色
   color_text_placeholder: '#a6a6a6',           // 文本框提示 // cyq
   color_text_disabled: '#bbb',              // 失效

@@ -1171,7 +1171,7 @@ a {
   padding: 0.3rem 0.3rem;
   border-radius: 0.14rem;
   background-clip: padding-box;
-  color: #000;
+  color: #fff;
   background-color: rgba(58, 58, 58, 0.9);
   font-size: 0.3rem;
   line-height: 0.4rem;
@@ -1223,7 +1223,7 @@ a {
   padding: 0 0.1rem;
   text-align: center;
   font-size: 0.24rem;
-  color: #000;
+  color: #fff;
   background-color: #fb7c61;
   white-space: nowrap;
   -webkit-transform: translateX(-45%);
@@ -1236,7 +1236,7 @@ a {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", SimSun, sans-serif;
 }
 .am-badge-text a {
-  color: #000;
+  color: #fff;
 }
 .am-badge-text p {
   margin: 0;
@@ -1280,7 +1280,7 @@ a {
   right: -0.64rem;
   top: 0.16rem;
   background-color: #fb7c61;
-  color: #000;
+  color: #fff;
   white-space: nowrap;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -1331,7 +1331,7 @@ a {
   border: 1PX solid #fcd000;
 }
 .am-button-primary.am-button-active {
-  background-color: #fcd033;
+  background-color: #fcb000;
 }
 .am-button-ghost {
   color: #fcd000;
@@ -1340,7 +1340,7 @@ a {
 }
 .am-button-ghost.am-button-active {
   color: #000;
-  background-color: #fcd033;
+  background-color: #fcb000;
   border: 1PX solid #fcd000;
 }
 .am-button-inline {
@@ -1957,7 +1957,7 @@ a {
 }
 .am-checkbox-agree .am-checkbox-agree-label a:active,
 .am-checkbox-agree .am-checkbox-agree-label a:hover {
-  color: #fcd033;
+  color: #fcb000;
 }
 .am-slider-tooltip,
 .rc-slider-tooltip {
@@ -1983,7 +1983,7 @@ a {
   height: 0.32rem;
   font-size: 0.3rem;
   line-height: 1;
-  color: #000;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.4);
@@ -2676,7 +2676,7 @@ a {
 .am-toast-notice-content .am-toast-text {
   min-width: 1.2rem;
   border-radius: 0.06rem;
-  color: #000;
+  color: #fff;
   background-color: rgba(58, 58, 58, 0.9);
   line-height: 1.5;
   padding: 0.18rem 0.3rem;
@@ -4381,7 +4381,7 @@ a {
 }
 .am-segment-item-selected {
   background: #fcd000;
-  color: #000;
+  color: #fff;
 }
 .am-segment-item-active .am-segment-item-inner {
   position: absolute;
@@ -4707,7 +4707,7 @@ a {
   border: 0;
 }
 .am-steps-item.am-steps-status-process .am-steps-head-inner > .am-steps-icon {
-  color: #000;
+  color: #fff;
 }
 .am-steps-item.am-steps-status-process .am-steps-title {
   color: #000;

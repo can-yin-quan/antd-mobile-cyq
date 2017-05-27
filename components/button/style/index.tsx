@@ -61,10 +61,10 @@ export default StyleSheet.create({
     color: variables.color_text_base,
   },
   primaryHighlightText: {
-    color: variables.color_text_base_inverse,
+    color: variables.color_text_base,
   },
   ghostHighlightText: {
-    color: variables.color_text_base_inverse,
+    color: variables.color_text_base,
   },
   warningHighlightText: {
     color: variables.color_text_base_inverse,
@@ -79,7 +79,7 @@ export default StyleSheet.create({
     color: variables.color_text_base,
   },
   primaryRawText: {
-    color: variables.color_text_base_inverse,
+    color: variables.color_text_base,
   },
   ghostRawText: {
     color: variables.ghost_button_color,
