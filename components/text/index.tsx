@@ -5,9 +5,14 @@ import { Text as RNText } from 'react-native';
 import tsProps from './PropsType';
 
 const SIZE = {
-  large: 16,
-  medium: 14,
-  small: 12,
+  large: 16,  // for legcy code
+  medium: 14, // for legcy code
+  small: 10, // for legcy code
+  xxl: 20,
+  xl: 18,
+  lg: 16,
+  md: 14,
+  sm: 10,
 }
 
 export default class Text extends React.Component<tsProps, any> {
