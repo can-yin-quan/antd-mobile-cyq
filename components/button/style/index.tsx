@@ -38,15 +38,18 @@ export default StyleSheet.create({
     paddingRight: variables.h_spacing_sm,
   },
   defaultRaw: {
-    backgroundColor: variables.fill_base,
-    borderColor: variables.border_color_base,
+    // backgroundColor: variables.fill_base,
+    // borderColor: variables.border_color_base,
+    backgroundColor: variables.brand_default, // cyq
+    borderColor: variables.brand_default, // cyq
   },
   primaryRaw: {
     backgroundColor: variables.primary_button_fill,
     borderColor: variables.primary_button_fill,
   },
   ghostRaw: {
-    backgroundColor: 'transparent',
+    // backgroundColor: 'transparent',
+    backgroundColor: variables.fill_base, // cyq
     borderColor: variables.ghost_button_color,
   },
   warningRaw: {
@@ -76,7 +79,8 @@ export default StyleSheet.create({
     fontSize: variables.button_font_size_sm,
   },
   defaultRawText: {
-    color: variables.color_text_base,
+    // color: variables.color_text_base,
+    color: variables.color_text_secondary, // cyq
   },
   primaryRawText: {
     color: variables.color_text_base,
