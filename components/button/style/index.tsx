@@ -38,9 +38,8 @@ export default StyleSheet.create({
     paddingRight: variables.h_spacing_sm,
   },
   defaultRaw: {
-    // backgroundColor: variables.fill_base,
+    backgroundColor: variables.fill_base,
     // borderColor: variables.border_color_base,
-    backgroundColor: variables.brand_default, // cyq
     borderColor: variables.brand_default, // cyq
   },
   primaryRaw: {

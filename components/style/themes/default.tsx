@@ -116,8 +116,8 @@ export default {
   button_height: 42,
   button_font_size: 18,
 
-  button_height_sm: 23,
-  button_font_size_sm: 12,
+  button_height_sm: 31,
+  button_font_size_sm: 15,
 
   across_button_height: 50,
   
