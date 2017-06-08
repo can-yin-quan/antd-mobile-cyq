@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import Modal from './Modal';
+import Text from '../text';
 
 export type AlertButtonType = {
   text: string;

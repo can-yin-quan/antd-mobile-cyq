@@ -8,12 +8,12 @@ export default {
   // 色彩
   // ---
   // 文字色
-  color_text_base: '#000',                  // 基本
+  color_text_base: '#535353',                  // 基本
   color_text_base_inverse: '#fff',          // 基本 _ 反色 // cyq
   color_text_secondary: '#a6a6a6',          // 辅助色 //cyq
   color_text_placeholder: '#a6a6a6',           // 文本框提示 // cyq
   color_text_disabled: '#bbb',              // 失效
-  color_text_caption: '#888',               // 辅助描述
+  color_text_caption: '#A6A6A6',               // 辅助描述
   color_text_paragraph: '#808080',             // 段落 // cyq
   color_link: brandPrimary,                 // 链接
 
@@ -35,7 +35,7 @@ export default {
   // 全局/品牌色
   brand_primary: brandPrimary,
   brand_primary_tap: brandPrimaryTap,
-  brand_default:'#a6a6a6',
+  brand_default: '#a6a6a6',
   brand_success: '#97d470',
   brand_warning: '#fefcec',
   brand_error: '#f4333c',

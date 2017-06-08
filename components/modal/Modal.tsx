@@ -1,11 +1,12 @@
 import React from 'react';
 import {
-  View, Text, Modal,
+  View, Modal,
   TouchableHighlight,
   Dimensions,
   StyleSheet,
   TouchableWithoutFeedback,
 } from 'react-native';
+import Text from '../text';
 import modalStyle from './style/index';
 import ModalPropsType from './PropsType';
 import RCModal from 'rc-dialog/lib/Modal';
