@@ -1,6 +1,7 @@
  /* tslint:disable: jsx-no-multiline-js */
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
+import Text from '../text';
 
 export interface StepsItemProps {
   width?: number;

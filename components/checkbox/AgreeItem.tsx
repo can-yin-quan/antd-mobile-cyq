@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, TouchableWithoutFeedback, Text } from 'react-native';
+import { View, TouchableWithoutFeedback } from 'react-native';
 import Checkbox from './Checkbox';
 import { AgreeItemPropsType } from './PropsType';
 import AgreeItemstyle from './style/index';
+import Text from '../text';
 
 const refCheckbox = 'checkbox';
 export default class AgreeItem extends React.Component<AgreeItemPropsType, any> {

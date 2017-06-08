@@ -7,6 +7,7 @@ interface TextProps {
   /** rn only */
   onPress?: (x?: any) => void;
   onLongPress?: (x?: any) => void;
+  numberOfLines?: number
 
 }
 

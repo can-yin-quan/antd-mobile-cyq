@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
+import Text from '../text';
 
 export interface CardHeaderProps {
   title?: any;

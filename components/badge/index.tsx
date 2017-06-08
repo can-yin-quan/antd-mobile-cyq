@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, } from 'react-native';
 import BadgeStyle from './style/index';
 import BadgeProps from './PropsType';
+import Text from '../text';
 
 export default class Badge extends React.Component<BadgeProps, any> {
   static defaultProps = {

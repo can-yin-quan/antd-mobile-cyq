@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, TouchableWithoutFeedback, Platform } from 'react-native';
+import { View, TouchableWithoutFeedback, Platform } from 'react-native';
 import TagStyle from './style/index';
 import TagProps from './PropsType';
+import Text from '../text';
 
 export default class Tag extends React.Component<TagProps, any> {
   static defaultProps = {

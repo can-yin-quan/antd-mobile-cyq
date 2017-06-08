@@ -1,7 +1,8 @@
 import React from 'react';
-import { TouchableWithoutFeedback, Image, View, Text } from 'react-native';
+import { TouchableWithoutFeedback, Image, View } from 'react-native';
 import { CheckboxProps } from './PropsType';
 import CheckboxStyle from './style/index';
+import Text from '../text';
 
 export default class Checkbox extends React.Component<CheckboxProps, any> {
   static CheckboxItem: any;

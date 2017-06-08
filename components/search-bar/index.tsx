@@ -1,9 +1,10 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
 import assign from 'object-assign';
-import { View, TextInput, Text, Image } from 'react-native';
+import { View, TextInput, Image } from 'react-native';
 import { SearchBarProps, SearchBarState, defaultProps } from './PropsType';
 import styles from './style/index';
+import Text from '../text';
 
 export default class SearchBar extends React.Component<SearchBarProps, SearchBarState> {
   static defaultProps = assign(defaultProps, { styles });

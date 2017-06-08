@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, TouchableWithoutFeedback, Image } from 'react-native';
+import { View, TouchableWithoutFeedback, Image } from 'react-native';
 import NoticeStyle from './style';
 import NoticeBarProps from './PropsType';
+import Text from '../text';
 
 export default class NoticeBar extends React.Component<NoticeBarProps, any> {
   static defaultProps = {

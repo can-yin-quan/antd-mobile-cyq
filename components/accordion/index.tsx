@@ -1,10 +1,11 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, } from 'react-native';
 import RNAccordion from 'react-native-collapsible/Accordion';
 import AccordionProps from './PropsType';
 import AccordionStyle from './style/index';
 import Icon from '../icon';
+import Text from '../text';
 
 export interface AccordionPanelProps {
   key?: string;

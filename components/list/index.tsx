@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, ViewStyle } from 'react-native';
+import { View, ViewStyle } from 'react-native';
 import Item from './ListItem';
 import { ListProps, BriefProps } from './PropsType';
 import listStyles from './style/index';
+import Text from '../text';
 
 class Brief extends React.Component<BriefProps, any> {
   render() {

@@ -1,7 +1,8 @@
 import React from 'react';
-import { TouchableWithoutFeedback, Image, Text, View } from 'react-native';
+import { TouchableWithoutFeedback, Image, View } from 'react-native';
 import { RadioProps } from './PropsType';
 import RadioStyle from './style/index';
+import Text from '../text';
 
 export default class Radio extends React.Component<RadioProps, any> {
   static RadioItem: any;

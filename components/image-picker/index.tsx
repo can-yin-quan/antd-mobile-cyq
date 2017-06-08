@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   View,
-  Text,
   Image,
   // CameraRoll,
   TouchableWithoutFeedback,
@@ -12,6 +11,7 @@ import {
 import { ImagePickerPropTypes } from './PropsType';
 import imagePickerStyles from './style/';
 import ImageRoll from './ImageRoll';
+import Text from '../text';
 
 export default class ImagePicker extends React.Component<ImagePickerPropTypes, any> {
   static defaultProps = {

@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { Slider } from 'antd-mobile';
+import Text from '../text';
 
 export default class BasicSliderExample extends React.Component<any, any> {
   constructor(props) {

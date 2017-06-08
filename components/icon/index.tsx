@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text }  from 'react-native';
+import Text from '../text';
 
 export interface IconPropType {
   type: string;

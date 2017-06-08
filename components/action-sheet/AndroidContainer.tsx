@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, TouchableHighlight } from 'react-native';
+import { View, TouchableHighlight } from 'react-native';
 import styles, { vars as variables } from './style/index';
 import Modal from 'rc-dialog/lib/Modal';
+import Text from '../text';
 
 export interface Props {
   onAnimationEnd?: (visible: boolean) => void;

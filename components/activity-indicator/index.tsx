@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   View,
-  Text,
   ActivityIndicator,
 } from 'react-native';
 import style from './style';
 import PropTypes from './PropsType';
+import Text from '../text';
 
 export default class RNActivityIndicator extends React.Component<PropTypes, any> {
   static defaultProps = {

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   View,
-  Text,
   StatusBar,
   Modal,
   StyleSheet,
@@ -10,6 +9,7 @@ import {
 import varibles from '../style/themes/default';
 import CameraRollPicker from 'react-native-camera-roll-picker';
 import { ImageRollProps } from './PropsType';
+import Text from '../text';
 
 const styles = StyleSheet.create({
   statusBarBg: {

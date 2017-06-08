@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, TouchableWithoutFeedback } from 'react-native';
+import { View, TouchableWithoutFeedback } from 'react-native';
 import assign from 'object-assign';
 import SegmentedControlProps from './PropsType';
 import AndroidStyle from './style/';
+import Text from '../text';
 
 export default class SegmentedControl extends React.Component<SegmentedControlProps, any> {
   static defaultProps = {

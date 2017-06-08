@@ -1,10 +1,11 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
 import assign from 'object-assign';
-import { View, Image, Text, TextInput, TouchableWithoutFeedback } from 'react-native';
+import { View, Image, TextInput, TouchableWithoutFeedback } from 'react-native';
 import variables from '../style/themes/default';
 import TextAreaItemProps from './PropsType';
 import TextAreaItemStyle from './style/index';
+import Text from '../text';
 
 function fixControlledValue(value) {
   if (typeof value === 'undefined' || value === null) {

@@ -1,12 +1,12 @@
 import React from 'react';
 import {
   View,
-  Text,
   Image,
   ActivityIndicator,
   Animated,
 } from 'react-native';
 import ToastContainerStyle from './style/';
+import Text from '../text';
 
 export interface ToastProps {
   content: string;

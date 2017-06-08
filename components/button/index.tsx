@@ -1,8 +1,9 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { TouchableHighlight, Text, StyleSheet, View, ActivityIndicator } from 'react-native';
+import { TouchableHighlight, StyleSheet, View, ActivityIndicator } from 'react-native';
 import buttonStyles from './style/index';
 import tsProps from './PropsType';
+import Text from '../text';
 
 export default class Button extends React.Component<tsProps, any> {
   static defaultProps = {

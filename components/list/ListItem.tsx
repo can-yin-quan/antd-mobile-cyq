@@ -1,8 +1,9 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { Image, View, TouchableHighlight, Text } from 'react-native';
+import { Image, View, TouchableHighlight, } from 'react-native';
 import { ListItemProps } from './PropsType';
 import listItemStyles from './style/index';
+import Text from '../text';
 
 function noop() {
 }

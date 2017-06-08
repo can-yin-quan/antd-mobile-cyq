@@ -1,9 +1,10 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
 import ResultStyle from './style';
 import Button from '../button';
 import ResultProps from './PropsType';
+import Text from '../text';
 
 export default class Result extends React.Component<ResultProps, any> {
   static defaultProps = {

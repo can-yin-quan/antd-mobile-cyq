@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import Button from '../button';
 import Flex from '../flex';
 import PaginationProps from './PropsType';
 import PaginationStyle from './style/index';
 import { getComponentLocale } from '../_util/getLocale';
 import zh_CN from './locale/zh_CN';
+import Text from '../text';
 
 export default class Pagination extends React.Component<PaginationProps, any> {
   static defaultProps = {

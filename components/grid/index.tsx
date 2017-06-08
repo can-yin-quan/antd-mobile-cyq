@@ -1,10 +1,11 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { Image, Text, Dimensions, View } from 'react-native';
+import { Image, Dimensions, View } from 'react-native';
 import Flex from '../flex';
 import Carousel from '../carousel';
 import GridStyle from './style';
 import { DataItem, GridProps } from './PropsType';
+import Text from '../text';
 
 export default class Grid extends React.Component<GridProps, any> {
   static defaultProps = {

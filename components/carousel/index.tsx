@@ -2,12 +2,12 @@ import React from 'react';
 import Pagination from '../pagination';
 import {
   View,
-  Text,
   ScrollView,
   Platform,
 } from 'react-native';
 import CarouselStyle from './style';
 import CarouselProps from './PropsType';
+import Text from '../text';
 
 class Carousel extends React.Component<CarouselProps, any> {
 

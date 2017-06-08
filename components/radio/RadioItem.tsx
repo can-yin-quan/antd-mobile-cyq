@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import Radio from './Radio';
 import List from '../list';
 import { RadioItemProps } from './PropsType';
 import RadioItemStyle from './style/index';
+import Text from '../text';
 
 const ListItem = List.Item;
 const refRadio = 'radio';

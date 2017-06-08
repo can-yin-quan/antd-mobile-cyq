@@ -1,10 +1,11 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
 import assign from 'object-assign';
-import { View, Image, Text, TextInput, TouchableWithoutFeedback, StyleSheet } from 'react-native';
+import { View, Image, TextInput, TouchableWithoutFeedback, StyleSheet } from 'react-native';
 import variables from '../style/themes/default';
 import InputItemProps from './PropsType';
 import InputItemStyle from './style/index';
+import Text from '../text';
 
 const noop: any = () => {
 };
