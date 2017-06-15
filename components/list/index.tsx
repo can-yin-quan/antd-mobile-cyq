@@ -4,6 +4,8 @@ import Item from './ListItem';
 import { ListProps, BriefProps } from './PropsType';
 import listStyles from './style/index';
 import Text from '../text';
+import variables from '../style/themes/default';
+import WhiteSpace from '../white-space';
 
 class Brief extends React.Component<BriefProps, any> {
   render() {
@@ -29,7 +31,7 @@ export default class List extends React.Component<ListProps, any> {
 
   render() {
     let {
-      children, style, renderHeader, renderFooter, styles = listStyles, ...restProps,
+      children, style, renderHeader, renderHeaderBase, renderFooter, styles = listStyles, ...restProps,
     } = this.props;
 
     let headerDom: React.ReactElement<any> | null = null;
@@ -48,6 +50,19 @@ export default class List extends React.Component<ListProps, any> {
         content = <Text style={styles.Footer}>{content}</Text>;
       }
       footerDom = <View>{content}</View>;
+    }
+
+    if (renderHeaderBase) {
+      let content = typeof renderHeaderBase === 'function' ? renderHeaderBase() : renderHeaderBase;
+      if (typeof content === 'string') {
+        content = (
+          <View style={{ backgroundColor: variables.fill_body}}>
+            <WhiteSpace />
+            <Text style={styles.HeaderBase}>{content}</Text>
+          </View>
+          )
+      }
+      headerDom = <View>{content}</View>;
     }
 
     return (<View {...restProps} style={style as ViewStyle}>

@@ -66,7 +66,7 @@ export default {
     textAlignVertical: 'center',
   },
   Extra: {
-    color: variables.color_text_caption,
+    color: variables.color_text_base,
     fontSize: variables.font_size_heading,
     lineHeight: Math.round(variables.font_size_heading * 1.1),
     textAlign: 'right',
@@ -103,5 +103,15 @@ export default {
   column: {
     flex: 1,
     flexDirection: 'column',
+  },
+
+  HeaderBase: {
+    fontSize: variables.font_size_caption,
+    color: variables.color_text_base,
+    paddingLeft: variables.h_spacing_lg,
+    paddingRight: variables.h_spacing_lg,
+    paddingTop: variables.v_spacing_lg,
+    paddingBottom: variables.v_spacing_lg,
+    backgroundColor: variables.fill_base,
   },
 };

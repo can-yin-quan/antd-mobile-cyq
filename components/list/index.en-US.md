@@ -2,6 +2,7 @@
 category: Components
 type: Data Display
 title: List
+subtitle: 列表
 ---
 
 
@@ -14,19 +15,20 @@ title: List
 
 ## API
 
-Support WEB, React-Native.
+适用平台：WEB、React-Native
 
 ### List
 
-Properties | Descrition | Type | Default
------------|------------|------|--------
+属性 | 说明 | 类型 | 默认值
+----|-----|------|------
 | renderHeader       | list heder  | (): void |  无  |
+| renderHeaderBase       | list heder  | (): void |  无  |
 | renderFooter       | list footer  | (): void |  无  |
 
 ### List.Item
 
-Properties | Descrition | Type | Default
------------|------------|------|--------
+属性 | 说明 | 类型 | 默认值
+----|-----|------|------
 | thumb       | 缩略图(当为 string 类型时作为 img src)  | String/React.Element |  无  |
 | extra      | 右边内容        | String/React.Element |  无  |
 | arrow      | 箭头方向(右,上,下), 可选`horizontal`,`up`,`down`,`empty`，如果是`empty`则存在对应的dom,但是不显示。黄的可以加后缀`Yellow`, 例如`horizontalYellow`   | String |   无  |
@@ -36,8 +38,9 @@ Properties | Descrition | Type | Default
 | multipleLine    | 多行 | Boolean  | `false`  |
 | wrap    | 是否换行，默认情况下，文字超长会被隐藏， | Boolean  | `false`  |
 | activeStyle(`web only`)    | 自定义active的样式 | Object  |   |
-| platform (`web only`) |  set the special style depends on platform, Options  `android`, `ios`， default to be `cross`， which means we will detect UA and change the component style | String | `'cross'`|
-
+| platform (`web only`) |  设定组件的平台特有样式, 可选值为 `android`, `ios`， 默认为 `cross`， 即组件会自动检测设备 UA 应用不同平台的样式    | String | `'cross'`|
+| justify | 水平对其，可选 `left`, `right` | String | |
+| extraFlex | 右侧flex 值(需要设置justify=left) | Number | 3 |
 ### List.Item.Brief
 
 辅助说明

@@ -1,6 +1,6 @@
 
 interface TextProps {
-  size?: 'large' | 'medium' | 'small' | number;
+  size?: 'large' | 'medium' | 'small' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number;
   color?: string;
   style?: Object | Array<Object>;
 

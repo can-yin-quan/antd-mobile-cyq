@@ -18,7 +18,8 @@ export default class Item extends React.Component<ListItemProps, any> {
   render() {
     const {
       styles, children, multipleLine, thumb, extra, arrow = '', style, onClick,
-      onPressIn = noop, onPressOut = noop, wrap, disabled, align, ...restProps,
+      onPressIn = noop, onPressOut = noop, wrap, disabled, align, 
+      justify, extraFlex = 3, ...restProps,
     } = this.props;
 
     let numberOfLines = {};
@@ -53,6 +54,25 @@ export default class Item extends React.Component<ListItemProps, any> {
       };
     }
 
+    let justifyStyle = {
+      left: {},
+      right: {},
+      rightExtra: {}
+    };
+
+    if (justify === 'left') {
+      justifyStyle.left = {
+        flex: 1,
+      };
+      justifyStyle.right = {
+        flex: extraFlex,
+      };
+      justifyStyle.rightExtra = {
+        textAlign: 'left',
+      };
+    }
+          
+
     let contentDom;
     if (Array.isArray(children)) {
       const tempContentDom: any[] = [];
@@ -63,13 +83,13 @@ export default class Item extends React.Component<ListItemProps, any> {
           tempContentDom.push(<Text style={[styles.Content]} {...numberOfLines} key={`${index}-children`}>{el}</Text>);
         }
       });
-      contentDom = <View style={[styles.column]}>{tempContentDom}</View>;
+      contentDom = <View style={[styles.column, justifyStyle.left]}>{tempContentDom}</View>;
     } else {
       if (React.isValidElement(children)) {
-        contentDom = <View style={[styles.column]}>{children}</View>;
+        contentDom = <View style={[styles.column, justifyStyle.left]}>{children}</View>;
       } else {
         contentDom = (
-          <View style={[styles.column]}>
+          <View style={[styles.column, justifyStyle.left]}>
             <Text style={[styles.Content]} {...numberOfLines}>{children}</Text>
           </View>
         );
@@ -79,8 +99,8 @@ export default class Item extends React.Component<ListItemProps, any> {
     let extraDom;
     if (extra) {
       extraDom = (
-        <View style={[styles.column]}>
-          <Text style={[styles.Extra]} {...numberOfLines}>{extra}</Text>
+        <View style={[styles.column, justifyStyle.right]}>
+          <Text style={[styles.Extra, justifyStyle.rightExtra]} {...numberOfLines}>{extra}</Text>
         </View>
       );
       if (React.isValidElement(extra)) {
@@ -92,7 +112,7 @@ export default class Item extends React.Component<ListItemProps, any> {
               tempExtraDom.push(
                 <Text
                   {...numberOfLines}
-                  style={[styles.Extra]}
+                  style={[styles.Extra, justifyStyle.rightExtra]}
                   key={`${index}-children`}
                 >
                   {el}
@@ -103,7 +123,7 @@ export default class Item extends React.Component<ListItemProps, any> {
             }
           });
           extraDom = (
-            <View style={[styles.column]}>
+            <View style={[styles.column, justifyStyle.right]}>
               {tempExtraDom}
             </View>
           );

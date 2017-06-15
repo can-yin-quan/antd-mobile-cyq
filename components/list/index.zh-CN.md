@@ -22,6 +22,7 @@ subtitle: 列表
 属性 | 说明 | 类型 | 默认值
 ----|-----|------|------
 | renderHeader       | list heder  | (): void |  无  |
+| renderHeaderBase       | list heder  | (): void |  无  |
 | renderFooter       | list footer  | (): void |  无  |
 
 ### List.Item
@@ -38,7 +39,8 @@ subtitle: 列表
 | wrap    | 是否换行，默认情况下，文字超长会被隐藏， | Boolean  | `false`  |
 | activeStyle(`web only`)    | 自定义active的样式 | Object  |   |
 | platform (`web only`) |  设定组件的平台特有样式, 可选值为 `android`, `ios`， 默认为 `cross`， 即组件会自动检测设备 UA 应用不同平台的样式    | String | `'cross'`|
-
+| justify | 水平对其，可选 `left`, `right` | String | |
+| extraFlex | 右侧flex 值(需要设置justify=left) | Number | 3 |
 ### List.Item.Brief
 
 辅助说明

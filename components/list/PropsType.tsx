@@ -11,6 +11,7 @@ export interface ListProps {
   renderFooter?: Function;
   /** rn only */
   styles?: any;
+  renderHeaderBase?: Function;
 }
 
 export interface ListItemProps {
@@ -37,6 +38,8 @@ export interface ListItemProps {
   styles?: any;
   onPressIn?: (e?: any) => void;
   onPressOut?: (e?: any) => void;
+  justify?: 'left' | 'right';
+  extraFlex?: number; 
 }
 
 export interface BriefProps {
