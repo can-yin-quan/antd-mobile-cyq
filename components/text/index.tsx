@@ -17,7 +17,7 @@ const SIZE = {
 
 export default class Text extends React.Component<tsProps, any> {
   static defaultProps = {
-    size: 'medium',
+    size: 'md',
     color: '#333333',
     style: {},
   }

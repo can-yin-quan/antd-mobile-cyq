@@ -13,7 +13,10 @@ import { Text, WingBlank } from 'antd-mobile';
 /* eslint global-require: 0 */
 const ButtonExample = () => (
   <WingBlank>
-    <Text>
+    <Text size={'lg'}>
+      hello world!!!
+    </Text>
+    <Text size={'xxl'} color={'red'}>
       hello world!!!
     </Text>
   </WingBlank>
