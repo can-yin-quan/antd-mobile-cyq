@@ -1,7 +1,7 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
 import { Image, Dimensions, View } from 'react-native';
-import Flex from '../flex';
+import Flex from '../flex';        // leo: 没有用到onPress事件的组件，设置为disabled 解决flex拦截手势响应事件问题
 import Carousel from '../carousel';
 import GridStyle from './style';
 import { DataItem, GridProps } from './PropsType';
@@ -60,7 +60,7 @@ export default class Grid extends React.Component<GridProps, any> {
           );
         } else {
           rowArr.push(
-            <Flex.Item key={j} style={[styles.grayBorderBox, flexItemStyle]} />,
+            <Flex.Item key={j} disabled style={[styles.grayBorderBox, flexItemStyle]} />,
           );
         }
       }
@@ -69,7 +69,7 @@ export default class Grid extends React.Component<GridProps, any> {
         borderBottomWidth: hasLine ? 1 : 0,
       };
       rowsArr.push(
-        <Flex key={i} style={[styles.grayBorderBox, boxBorderStyle]}>
+        <Flex key={i} disabled style={[styles.grayBorderBox, boxBorderStyle]}>
           {rowArr}
         </Flex>,
       );
@@ -87,10 +87,10 @@ export default class Grid extends React.Component<GridProps, any> {
           } else {
             const res: any = [];
             for (let jjj = 0; jjj < columnNum; jjj++) {
-              res.push(<Flex.Item key={jjj} style={[styles.grayBorderBox, flexItemStyle]} />);
+              res.push(<Flex.Item key={jjj} disabled style={[styles.grayBorderBox, flexItemStyle]} />);
             }
             pageRows.push(
-              <Flex key={rowIndex} style={[styles.grayBorderBox, { borderBottomWidth: hasLine ? 1 : 0 }]}>
+              <Flex key={rowIndex} disabled style={[styles.grayBorderBox, { borderBottomWidth: hasLine ? 1 : 0 }]}>
                 {res}
               </Flex>,
             );
@@ -109,6 +109,6 @@ export default class Grid extends React.Component<GridProps, any> {
 
     return isCarousel && pageCount > 1 ? (
       <Carousel infinite={false} dots>{pagesArr}</Carousel>
-    ) : <Flex direction="column">{rowsArr}</Flex>;
+    ) : <Flex direction="column" disabled>{rowsArr}</Flex>;
   }
 }
