@@ -23,6 +23,9 @@ export default StyleSheet.create({
     height: 4 * grid,
     borderRadius: 2 * grid,
   },
+  hot: {
+    backgroundColor: variables.brand_hot,
+  },
   textDom: {
     paddingVertical: 0.5 * grid,
     paddingHorizontal: (Platform.OS === 'ios' ? 1.5 : 2) * grid,

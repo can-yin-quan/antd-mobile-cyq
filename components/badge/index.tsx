@@ -16,7 +16,7 @@ export default class Badge extends React.Component<BadgeProps, any> {
   render() {
     let {
       styles, style,
-      children, text, size, overflowCount, dot, corner, ...restProps, // todo: hot
+      children, text, size, overflowCount, dot, corner, hot, ...restProps // todo: hot
     } = this.props;
 
     text = typeof text === 'number' && text > (overflowCount as number) ? `${overflowCount}+` : text;
@@ -31,7 +31,7 @@ export default class Badge extends React.Component<BadgeProps, any> {
       <View {...restProps} style={[styles[badgeCls], styles[`${badgeCls}${size}`]]}>
         <Text style={[styles.text]}>{text}</Text>
       </View>
-    ) : <View {...restProps} style={[styles.dot, styles[`dotSize${size}`]]} />;
+    ) : <View {...restProps} style={[styles.dot, styles[`dotSize${size}`], hot && styles.hot]} />;
 
     return (
       <View style={[ styles.wrap, style ]}>
