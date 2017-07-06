@@ -1,6 +1,6 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { View, } from 'react-native';
+import { View, Image, } from 'react-native';
 import RNAccordion from 'react-native-collapsible/Accordion';
 import AccordionProps from './PropsType';
 import AccordionStyle from './style/index';
@@ -9,7 +9,8 @@ import Text from '../text';
 
 export interface AccordionPanelProps {
   key?: string;
-  header: any;
+  header?: any;
+  renderHeader?: (section: any, isActive: boolean, arrEnum: any) => any;
 }
 
 class AccordionPanel extends React.Component<AccordionPanelProps, any> {
@@ -17,6 +18,15 @@ class AccordionPanel extends React.Component<AccordionPanelProps, any> {
     return null;
   }
 }
+
+const arrEnum = {
+  horizontal: <Image source={require('../style/images/arrow.png')} style={AccordionStyle.Arrow} />,
+  down: <Image source={require('../style/images/arrow-down.png')} style={AccordionStyle.ArrowV} />,
+  up: <Image source={require('../style/images/arrow-up.png')} style={AccordionStyle.ArrowV} />,
+  horizontalYellow: <Image source={require('../style/images/arrow-y.png')} style={AccordionStyle.Arrow} />,
+  downYellow: <Image source={require('../style/images/arrow-down-y.png')} style={AccordionStyle.ArrowV} />,
+  upYellow: <Image source={require('../style/images/arrow-up-y.png')} style={AccordionStyle.ArrowV} />,
+};
 
 class Accordion extends React.Component<AccordionProps, any> {
   static defaultProps = {
@@ -26,6 +36,16 @@ class Accordion extends React.Component<AccordionProps, any> {
   static Panel: any;
 
   _renderHeader = (section, _, isActive) => {
+    // Leo: 支持自定义 header
+    if (section.renderHeader) {
+      return section.renderHeader(section, isActive, arrEnum);
+    }
+
+    let arrow = arrEnum.downYellow;;
+    if (isActive) {
+      arrow = arrEnum.upYellow;
+    }
+
     const styles = this.props.styles;
     return (
       <View style={styles.header}>
@@ -36,9 +56,7 @@ class Accordion extends React.Component<AccordionProps, any> {
             </View>
           )
         }
-        <View style={styles.arrow}>
-          <Icon type={isActive ? 'up' : 'down'} size={15} color="#000" />
-        </View>
+        { arrow }
       </View>
     );
   }
@@ -79,6 +97,7 @@ class Accordion extends React.Component<AccordionProps, any> {
       }
       return {
         title: child.props.header,
+        renderHeader: child.props.renderHeader,
         content: child.props.children,
       };
     });

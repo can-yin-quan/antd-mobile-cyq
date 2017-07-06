@@ -41,6 +41,7 @@ export default {
   brand_error: '#f4333c',
   brand_hot: '#dd4145',        // 用于推荐/促销/折扣 // cyq
   brand_important: '#fb7c61',  // 用于小红点 // cyq
+  brand_info: '#37b1c8',
 
   // 边框色
   border_color_base: '#f3f3f3',

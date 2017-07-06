@@ -14,10 +14,6 @@ export default StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: variables.border_color_base,
   },
-  arrow: {
-    width: 15,
-    height: 15,
-  },
   headerWrap: {
     flex: 1,
     height: variables.list_item_height,
@@ -37,5 +33,16 @@ export default StyleSheet.create({
   contentText: {
     fontSize: variables.font_size_subhead,
     color: variables.color_text_paragraph,
+  },
+  Arrow: {
+    width: 8,
+    height: 13,
+    marginLeft: variables.h_spacing_md,
+    marginTop: variables.v_spacing_xs,
+  },
+  ArrowV: {
+    width: 13,
+    height: 8,
+    marginLeft: variables.h_spacing_md,
   },
 });
