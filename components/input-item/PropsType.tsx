@@ -37,6 +37,7 @@ interface InputItemProps {
   styles?: any;
   autoFocus?: boolean;
   focused?: boolean;
+  inputTextAlign?: 'left'|'right'|'center'
 }
 
 export default InputItemProps;

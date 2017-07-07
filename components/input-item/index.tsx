@@ -98,7 +98,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
   render() {
     const {
       value, defaultValue, type, style, clear, children, error, extra,
-      last, onExtraClick = noop, onErrorClick = noop, styles,
+      last, onExtraClick = noop, onErrorClick = noop, styles, inputTextAlign
     } = this.props;
     const labelNumber = this.props.labelNumber as number;
     let valueProps;
@@ -122,6 +122,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
 
     const inputStyle = {
       color: error ? '#f50' : variables.color_text_base,
+      textAlign: inputTextAlign || 'left' 
     };
 
     const extraStyle = {
