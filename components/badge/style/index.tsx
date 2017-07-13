@@ -50,6 +50,7 @@ export default StyleSheet.create({
     top: 3 * grid,
   },
   text: {
+    fontSize: variables.font_size_caption_sm,
     color: variables.color_text_base_inverse,
     textAlign: 'center',
   },

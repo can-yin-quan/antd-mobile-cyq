@@ -3,6 +3,7 @@
 import React from 'react';
 import { Text as RNText } from 'react-native';
 import tsProps from './PropsType';
+import variables from '../style/themes/default';
 
 const SIZE = {
   large: 16,  // for legcy code
@@ -18,7 +19,7 @@ const SIZE = {
 export default class Text extends React.Component<tsProps, any> {
   static defaultProps = {
     size: 'md',
-    color: '#333333',
+    color: variables.color_text_base,
     style: {},
   }
   constructor(props) {
