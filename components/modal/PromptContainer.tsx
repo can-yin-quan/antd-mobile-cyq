@@ -4,6 +4,7 @@ import { View, TextInput } from 'react-native';
 import Text from '../text';
 import Modal from './Modal';
 import promptStyles from './style/prompt';
+import variables from '../style/themes/default';
 
 export type ButtonType = {
   text: string;
@@ -128,6 +129,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
                     onChangeText={(value) => { this.onChangeText('text', value); }}
                     value={this.state.text}
                     style={styles.input}
+                    placeholderTextColor={variables.color_text_placeholder}
                   />
                 </View>
               )
@@ -141,6 +143,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
                     onChangeText={(value) => { this.onChangeText('password', value); }}
                     value={this.state.password}
                     style={styles.input}
+                    placeholderTextColor={variables.color_text_placeholder}
                   />
                 </View>
               )

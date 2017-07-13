@@ -176,6 +176,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
           secureTextEntry={type === 'password'}
           onBlur={this.onInputBlur}
           onFocus={this.onInputFocus}
+          placeholderTextColor={variables.color_text_placeholder}
         />
         {extra ? <TouchableWithoutFeedback onPress={onExtraClick}>
           <View>

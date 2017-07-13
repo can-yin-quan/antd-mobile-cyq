@@ -5,6 +5,7 @@ import { View, TextInput, Image } from 'react-native';
 import { SearchBarProps, SearchBarState, defaultProps } from './PropsType';
 import styles from './style/index';
 import Text from '../text';
+import variables from '../style/themes/default';
 
 export default class SearchBar extends React.Component<SearchBarProps, SearchBarState> {
   static defaultProps = assign(defaultProps, { styles });
@@ -53,6 +54,7 @@ export default class SearchBar extends React.Component<SearchBarProps, SearchBar
     if (this.props.onCancel) {
       this.props.onCancel(this.state.value);
     }
+    (this.refs as any).searchInput.blur();
   }
 
   onFocus = () => {
@@ -99,6 +101,7 @@ export default class SearchBar extends React.Component<SearchBarProps, SearchBar
             {...restProps}
             onFocus={this.onFocus}
             onBlur={this.onBlur}
+            placeholderTextColor={variables.color_text_placeholder}
           />
         </View>
         <Image

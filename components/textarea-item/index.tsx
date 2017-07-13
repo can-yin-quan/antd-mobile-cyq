@@ -116,6 +116,7 @@ export default class TextAreaItem extends React.Component<TextAreaItemProps, any
           multiline={rows > 1 || autoHeight}
           numberOfLines={rows}
           maxLength={maxLength}
+          placeholderTextColor={variables.color_text_placeholder}
         />
         {error ? <TouchableWithoutFeedback onPress={onErrorClick}>
           <View style={[styles.errorIcon]}>

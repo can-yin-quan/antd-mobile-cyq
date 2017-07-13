@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import PopupCascader from 'rmc-cascader/lib/Popup';
 import Cascader from 'rmc-cascader/lib/Cascader';
 import MultiPicker from 'rmc-picker/lib/MultiPicker';
@@ -6,6 +7,8 @@ import treeFilter from 'array-tree-filter';
 import tsPropsType from './PropsType';
 import styles from './styles';
 import popupProps from './popupProps';
+import Text from '../text';
+import variables from '../style/themes/default';
 
 function getDefaultProps() {
   const defaultFormat = (values) => {
@@ -84,8 +87,8 @@ export default class Picker extends React.Component<tsPropsType, any> {
         {...props}
         prefixCls={popupPrefixCls}
         value={value}
-        dismissText={dismissText}
-        okText={okText}
+        dismissText={(<View><Text size={18} color={variables.brand_primary}>{dismissText}</Text></View>)}
+        okText={(<View><Text size={18} color={variables.brand_primary}>{okText}</Text></View>)}
         {...popupMoreProps}
       >
         {React.cloneElement(children, { extra: this.getSel() || extra })}
