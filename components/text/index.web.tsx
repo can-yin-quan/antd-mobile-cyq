@@ -13,14 +13,14 @@ export default class Text extends React.Component<any, any> {
   static defaultProps = {
     Component: 'div',
     size: 'md',
-    color: '#333333',
+    color: '#535353',
     style: {},
   };
   render() {
     const props = assign({}, this.props);
     const { Component, size, color, style, children, ...restProps } = props;
     const textStyle = {
-      fontSize: typeof size === 'string' ?  `${SIZE[size] * 2}px` : `${size * 2}px`, // size 类型是string获取对应数值
+      fontSize: typeof size === 'string' ?  `${SIZE[size] * 2 / 100}rem` : `${size * 2 / 100}rem`, // size 类型是string获取对应数值
       color,
     };
     const textStyles = [

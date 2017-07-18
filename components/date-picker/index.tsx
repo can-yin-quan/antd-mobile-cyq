@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import PopupDatePicker from 'rmc-date-picker/lib/Popup';
 import PopupStyles from '../picker/styles';
@@ -8,6 +9,8 @@ import tsPropsType from './PropsType';
 import RCDatePicker from 'rmc-date-picker/lib/DatePicker';
 import { getComponentLocale, getLocaleCode } from '../_util/getLocale';
 import zh_CN from './locale/zh_CN';
+import Text from '../text';
+import variables from '../style/themes/default';
 
 export default class DatePicker extends React.Component<tsPropsType, any> {
   static defaultProps = assign({
@@ -50,8 +53,8 @@ export default class DatePicker extends React.Component<tsPropsType, any> {
     );
     const newProps = {
       ...props,
-      okText,
-      dismissText,
+      okText: (<View><Text size={18} color={variables.brand_primary}>{okText}</Text></View>),
+      dismissText: (<View><Text size={18} color={variables.brand_primary}>{dismissText}</Text></View>),
     };
     return (
       <PopupDatePicker
