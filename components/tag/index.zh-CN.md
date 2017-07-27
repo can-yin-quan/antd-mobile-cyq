@@ -24,3 +24,5 @@ subtitle: 标签
 | onChange   | 切换选中回调函数 | (selected: bool): void |   无  |
 | onClose   | 点关闭时的回调函数 | (): void |   无  |
 | afterClose   | 关闭后的回调 | (): void |   无  |
+| closableColor   | 关闭按钮颜色 | string |   无  |
+| color   | 文本和边框颜色 | string |   无  |

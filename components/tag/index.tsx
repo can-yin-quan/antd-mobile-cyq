@@ -76,7 +76,7 @@ export default class Tag extends React.Component<TagProps, any> {
   }
 
   render() {
-    const { children, disabled, small, closable, styles, style } = this.props;
+    const { children, disabled, small, closable, styles, style, color, closableColor } = this.props;
     const selected = this.state.selected;
 
     let wrapStyle;
@@ -94,6 +94,18 @@ export default class Tag extends React.Component<TagProps, any> {
       textStyle = styles.disabledText;
     }
 
+    const _wrapStyle:{borderColor?: string} = {};
+    const _textStyle:{color?: string} = {};
+    // 自定义边框颜色和字体颜色
+    if (color != undefined && color != '') {
+      _wrapStyle.borderColor = color;
+      _textStyle.color = color;
+    }
+    const _closableColor:{backgroundColor?: string} = {};
+    if (closableColor != undefined && closableColor != '') {
+      _closableColor.backgroundColor = closableColor;
+    }
+
     const sizeWrapStyle = small ? styles.wrapSmall : {};
     const sizeTextStyle = small ? styles.textSmall : {};
 
@@ -105,7 +117,7 @@ export default class Tag extends React.Component<TagProps, any> {
       >
         <View
           ref={component => this.closeDom = component}
-          style={[styles.close, Platform.OS === 'ios' ? styles.closeIOS : styles.closeAndroid]}
+          style={[styles.close, _closableColor, Platform.OS === 'ios' ? styles.closeIOS : styles.closeAndroid]}
         >
           <Text style={[styles.closeText, Platform.OS === 'android' ? styles.closeTransform : {}]}>×</Text>
         </View>
@@ -115,8 +127,8 @@ export default class Tag extends React.Component<TagProps, any> {
     return !this.state.closed ? (
       <View style={[ styles.tag, style ]}>
         <TouchableWithoutFeedback onPress={this.onClick}>
-          <View style={[styles.wrap, sizeWrapStyle, wrapStyle]}>
-            <Text style={[styles.text, sizeTextStyle, textStyle]}>{children} </Text>
+          <View style={[styles.wrap, sizeWrapStyle, wrapStyle, _wrapStyle]}>
+            <Text style={[styles.text, sizeTextStyle, textStyle, _textStyle]}>{children} </Text>
           </View>
         </TouchableWithoutFeedback>
         {closableDom}
