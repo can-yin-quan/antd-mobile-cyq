@@ -21,6 +21,10 @@ export default StyleSheet.create({
     backgroundColor: variables.brand_warning,
     borderColor: variables.brand_warning,
   },
+  disabledHighlight: {
+    backgroundColor: variables.fill_body,
+    borderColor: variables.fill_body,
+  },
   wrapperStyle: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -56,7 +60,7 @@ export default StyleSheet.create({
     borderColor: variables.brand_warning,
   },
   disabledRaw: {
-    backgroundColor: variables.fill_disabled,
+    backgroundColor: variables.fill_base,
     borderColor: variables.fill_disabled,
   },
   defaultHighlightText: {
@@ -69,6 +73,9 @@ export default StyleSheet.create({
     color: variables.color_text_base,
   },
   warningHighlightText: {
+    color: variables.color_text_base_inverse,
+  },
+  disabledHighlightText: {
     color: variables.color_text_base_inverse,
   },
   largeRawText: {
