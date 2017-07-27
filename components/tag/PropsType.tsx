@@ -12,6 +12,8 @@ interface TagProps {
   className?: string;
   /** rn only */
   styles?: any;
+  color?: string;
+  closableColor?: string;
 }
 
 export default TagProps;

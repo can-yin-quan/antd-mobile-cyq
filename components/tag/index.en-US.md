@@ -23,3 +23,5 @@ Properties | Descrition | Type | Default
 | onChange   | The callback function that is triggered when the selected state changes. | (selected: bool): void |   -  |
 | onClose   | The callback function that is triggered when the tag is closed. | (): void |   -  |
 | afterClose   | The callback function that is triggered after close. | (): void |   -  |
+| closableColor   | Close button color | string |   -  |
+| color   | Text and border colors | string |   -  |
