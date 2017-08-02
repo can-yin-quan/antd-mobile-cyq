@@ -76,7 +76,7 @@ export default class Tag extends React.Component<TagProps, any> {
   }
 
   render() {
-    const { children, disabled, small, closable, styles, style, color, closableColor } = this.props;
+    const { children, disabled, small, middle, closable, styles, style, color, closableColor } = this.props;
     const selected = this.state.selected;
 
     let wrapStyle;
@@ -106,8 +106,19 @@ export default class Tag extends React.Component<TagProps, any> {
       _closableColor.backgroundColor = closableColor;
     }
 
-    const sizeWrapStyle = small ? styles.wrapSmall : {};
-    const sizeTextStyle = small ? styles.textSmall : {};
+    let sizeTextStyle = {};
+    let sizeWrapStyle = {};
+    if (small) {
+      sizeTextStyle = styles.textSmall;
+      sizeWrapStyle = styles.wrapSmall;
+    } else if (middle) {
+      sizeTextStyle = styles.textMiddle;
+      sizeWrapStyle = styles.wrapMiddle;
+    }
+    
+     
+
+    
 
     const closableDom = closable && !small && !disabled ? (
       <TouchableWithoutFeedback

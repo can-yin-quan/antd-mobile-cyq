@@ -3,6 +3,7 @@ interface TagProps {
   selected?: boolean;
   closable?: boolean;
   small?: boolean;
+  middle?: boolean;
   onChange?: (selected: boolean) => void;
   onClose?: () => void;
   afterClose?: () => void;

@@ -27,6 +27,13 @@ export default StyleSheet.create({
   textSmall: {
     fontSize: variables.font_size_icontext,
   },
+  textMiddle: {
+    fontSize: variables.font_size_base,
+  },
+  wrapMiddle: {
+    paddingVertical: 1.5,
+    paddingHorizontal: variables.h_spacing_md,
+  },
   normalWrap: {
     backgroundColor: variables.fill_base,
     borderColor: variables.border_color_base,
