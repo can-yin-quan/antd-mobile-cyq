@@ -115,10 +115,6 @@ export default class Tag extends React.Component<TagProps, any> {
       sizeTextStyle = styles.textMiddle;
       sizeWrapStyle = styles.wrapMiddle;
     }
-    
-     
-
-    
 
     const closableDom = closable && !small && !disabled ? (
       <TouchableWithoutFeedback

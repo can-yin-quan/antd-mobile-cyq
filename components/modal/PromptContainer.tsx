@@ -130,6 +130,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
                     value={this.state.text}
                     style={styles.input}
                     placeholderTextColor={variables.color_text_placeholder}
+                    underlineColorAndroid={'transparent'}
                   />
                 </View>
               )
@@ -144,6 +145,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
                     value={this.state.password}
                     style={styles.input}
                     placeholderTextColor={variables.color_text_placeholder}
+                    underlineColorAndroid={'transparent'}
                   />
                 </View>
               )

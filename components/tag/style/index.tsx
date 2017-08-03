@@ -68,10 +68,11 @@ export default StyleSheet.create({
     overflow: 'hidden',
   },
   closeAndroid: {
+    justifyContent: 'center',
     width: 16,
     height: 32,
     left: -2,
-    top: -10,
+    top: -11,
     transform: [{
       rotate: '45deg',
     }],
