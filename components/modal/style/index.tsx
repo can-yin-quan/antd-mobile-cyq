@@ -31,8 +31,8 @@ export default StyleSheet.create({
     paddingHorizontal: variables.h_spacing_lg,
   },
   body: {
-    paddingTop: 0,
-    paddingBottom: variables.v_spacing_lg,
+    paddingTop: variables.v_spacing_md,
+    paddingBottom: variables.v_spacing_md,
     paddingHorizontal: variables.h_spacing_lg,
   },
   maskClosable: {
