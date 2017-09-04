@@ -1,6 +1,6 @@
 /* tslint:disable:jsx-no-multiline-js */
 import React from 'react';
-import { View, TextInput } from 'react-native';
+import { View, TextInput, ScrollView } from 'react-native';
 import Text from '../text';
 import Modal from './Modal';
 import promptStyles from './style/prompt';
@@ -111,6 +111,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
     }
 
     return (
+      <ScrollView keyboardDismissMode="on-drag">
       <Modal
         transparent
         title={title}
@@ -153,6 +154,7 @@ export default class PropmptContainer extends React.Component<PropmptContainerPr
           </View>
         </View>
       </Modal>
+      </ScrollView>
     );
   }
 }
