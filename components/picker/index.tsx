@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import PopupCascader from 'rmc-cascader/lib/Popup';
 import Cascader from 'rmc-cascader/lib/Cascader';
 import MultiPicker from 'rmc-picker/lib/MultiPicker';
@@ -8,6 +7,7 @@ import tsPropsType from './PropsType';
 import styles from './styles';
 import popupProps from './popupProps';
 import Text from '../text';
+import View from '../view';
 import variables from '../style/themes/default';
 
 function getDefaultProps() {

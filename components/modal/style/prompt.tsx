@@ -18,7 +18,7 @@ export default StyleSheet.create({
     borderColor: variables.border_color_base,
   },
   input: {
-    height: 35,
+    height: 34,
     fontSize: variables.font_size_base,
     paddingHorizontal: variables.h_spacing_sm,
     color: variables.color_text_base,
