@@ -56,10 +56,10 @@
     "react-native-drawer-layout": "~1.1.1",
     "react-native-menu": "~0.20.1",
     "react-native-scrollable-tab-view": "^0.7.2",
-    "rmc-cascader": "^4.1.1",
-    "rmc-date-picker": "^5.3.1",
-    "rmc-list-view": "^0.7.4",
-    "rmc-picker": "^3.8.0",
+    "rmc-cascader": "4.1.2",
+    "rmc-date-picker": "5.3.3",
+    "rmc-list-view": "0.7.5",
+    "rmc-picker": "3.8.5",
     "rn-topview": "~0.1.0"
   },
   "devDependencies": {
