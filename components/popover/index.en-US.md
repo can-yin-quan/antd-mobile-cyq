@@ -30,6 +30,8 @@ Properties | Descrition | Type | Default
 | renderOverlayComponent (`rn only`)   | A function that renders takes in the MenuOptions element and renders a container element that contains the options. Default function wraps options with a `ScrollView`. e.g. `(opts) => <Cus>{opts}</Cus>`  | (opts: any): React.Node |  -   |
 | name (`rn only`)   | menu name, used for manual control   | String |  -   |
 | openMenu / closeMenu / toggleMenu(`rn only`)   | Set the menu's open/close status, the parameter is menu name.  | Function(name) |  -   |
+| onOpen(`rn only`)   | open callback  | Function() |  -   |
+| onClose(`rn only`)   | close callback  | Function() |  -   |
 
 ### Popover.Item
 

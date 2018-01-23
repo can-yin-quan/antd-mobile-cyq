@@ -11,6 +11,10 @@ interface Props {
   children?: any;
   /** web only */
   prefixCls?: string;
+
+  /** RN only */
+  onOpen?: () => void;
+  onClose?: () => void;
 }
 
 export default Props;

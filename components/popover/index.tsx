@@ -5,12 +5,15 @@ import tsPropsType from './PropsType';
 export default class Popover extends React.Component<tsPropsType, any> {
   static defaultProps = {
     onSelect: () => {},
+    onOpen: () => {},
+    onClose: () => {}
   };
   static Item = MenuOption;
   render() {
     const {
       children, onSelect, overlay, disabled, contextStyle,
       name, style, triggerStyle, overlayStyle, renderOverlayComponent,
+      onOpen, onClose
     } = this.props;
     const menuOptionsProp = {
       optionsContainerStyle: overlayStyle,
@@ -18,7 +21,7 @@ export default class Popover extends React.Component<tsPropsType, any> {
     };
     return (
       <MenuContext ref="menuContext" style={contextStyle}>
-        <Menu name={name} onSelect={onSelect} style={style}>
+        <Menu name={name} onSelect={onSelect} onOpen={onOpen} onClose={onClose} style={style}>
           <MenuTrigger disabled={disabled} style={triggerStyle}>
             {children}
           </MenuTrigger>

@@ -31,6 +31,8 @@ subtitle: 气泡
 | renderOverlayComponent (`rn only`)   | 自定义弹出层的外围组件，默认是`ScrollView`，示例`(opts) => <Cus>{opts}</Cus>`  | (opts: any): React.Node |  -   |
 | name (`rn only`)   | menu 名字，用于手动触发开关 menu    | String |  -   |
 | openMenu / closeMenu / toggleMenu(`rn only`)   | 用于手动开关 menu，参数为上边 menu 的 name. 使用示例见 demo  | Function(name) |  -   |
+| onOpen(`rn only`)   | 打开回调函数  | Function() |  -   |
+| onClose(`rn only`)   | 关闭回调函数  | Function() |  -   |
 
 ### Popover.Item
 
